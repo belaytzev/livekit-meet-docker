@@ -1,6 +1,5 @@
 FROM node:current-alpine
-
-WORKDIR /src/meet
+WORKDIR /app/meet
 RUN apk --update --no-cache add git
 RUN git clone https://github.com/livekit/meet.git .
 RUN yarn --network-timeout 1000000
